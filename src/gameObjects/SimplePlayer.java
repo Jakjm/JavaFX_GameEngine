@@ -29,12 +29,10 @@ public class SimplePlayer extends GameEntity{
 	public void drawObject(GraphicsContext gc) {
 		gc.setFill(Color.BLUE);
 		gc.fillRect(-30,-50,60,100);
-		gc.setFill(Color.DARKGREY);
-		gc.fillOval(-20,-100,40,40);
 	}
 	private static class SimplePlayerHitshape extends Hitshape{
 		public SimplePlayerHitshape() {
-			super(new Hitshape[] {new Circle(20.0,6),new Box(60,100)},new Point2D [] {new Point2D(0,-80),new Point2D(0,0)});
+			super(new Hitshape[] {new Box(60,100)},new Point2D [] {new Point2D(0,0)});
 		}
 	}
 }

@@ -55,8 +55,6 @@ public abstract class GameEntity extends SolidObject{
 				for(Point2D v : data.hitpoints) {
 					GameManager.drawPoint(gc,v.getX(),v.getY(),10,Color.AQUAMARINE);
 				}
-				//Point2D adjustedPoint = data.colAxis.multiply(25 / data.colAxis.magnitude());
-				//gc.strokeLine(data.surfacePoint.getX(),data.surfacePoint.getY(),data.surfacePoint.getX() + adjustedPoint.getX(),data.surfacePoint.getY() + adjustedPoint.getY());
 			}
 			gc.setTransform(new Affine());
 		}
